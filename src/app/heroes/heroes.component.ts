@@ -7,7 +7,11 @@ import { Hero } from '../../models/hero';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-  heroes: Hero[] = [ {Id: 1, Name: "Chimi el gatato"}];
+  heroes: Hero[] = 
+  [ 
+    {Id: 1, Name: "Chimi el gatato"}
+    , {Id: 2, Name: "Peluchita la gatatita"}
+  ];
 
   constructor() { }
 
