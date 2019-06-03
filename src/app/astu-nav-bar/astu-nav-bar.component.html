@@ -1,0 +1,33 @@
+
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <a mat-button >
+          Gatatitos
+      </a>
+      <span class="fill-remaining"></span>
+      <button mat-button [matMenuTriggerFor]="matMenu" color="accent">
+        <span>Menu</span>
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      <mat-menu #matMenu='matMenu'>
+        <button mat-menu-item (click)="log($event)">
+          <mat-icon>voicemail</mat-icon>
+          Gatatitos
+        </button>
+        
+        <button mat-menu-item >
+          <mat-icon>notifications_off</mat-icon>
+          Bologna
+        </button> 
+        
+        <button mat-menu-item>
+          <mat-icon>voicemail</mat-icon>
+          Bolon
+        </button>
+
+      </mat-menu>      
+    </mat-toolbar-row>
+    
+</mat-toolbar>
+
+<router-outlet></router-outlet>
