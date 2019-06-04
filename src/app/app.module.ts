@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
+import { HttpClientModule } from '@angular/common/http'
 
 //Components
 import { AppRoutingModule } from './app-routing.module';
@@ -32,7 +33,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     MatButtonModule,
     MatMenuModule,
     MatIconModule,
-    MatCarouselModule    
+    MatCarouselModule,
+    HttpClientModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
